@@ -10,12 +10,15 @@ const accessToken = "6bebce06287e44cc94027e5aaf81db3c"
 // 头部参数
 const headerJson = {
   'content-type': 'application/json',
-  'accessToken': accessToken,
-  'applyID': appID,
-  'requestType': "app",
-  'secretKey':appSecretKey,
-  'userInfo': null
+  // 'accessToken': accessToken,
+  // 'applyID': appID,
+  // 'requestType': "app",
+  // 'secretKey':appSecretKey,
+  // 'userInfo': null
 }
+
+let momentsuiCommUrl = 'http://20.97.6.109:3001/momentsuiservice'
+
 
 // 公共变量
  const  publicVariable ={
@@ -31,19 +34,19 @@ const headerJson = {
        {name: '局长评论', add: '4'},
    ],
    tableData: [{
-     date: '2016-05-02',
+     date: '1496311370052',
      name: '罗湖区',
      address: '234'
    }, {
-     date: '2016-05-04',
+     date: '1496311370052',
      name: '宝安区',
      address: '1088'
    }, {
-     date: '2016-05-01',
+     date: '1496311370052',
      name: '龙华区',
      address: '54'
    }, {
-     date: '2016-05-03',
+     date: '1496311370052',
      name: '南山区',
      address: '67'
    }],
@@ -53,6 +56,7 @@ const headerJson = {
 
 // 暴露对外接口变量
 export default {
+  momentsuiCommUrl,
   solution,
   appID,
   appSecretKey,

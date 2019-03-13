@@ -10,14 +10,6 @@ export default new Router({
       path: '/',
       name: '动态单位统计',
       component: resolve => require(['@/view/querylist/index'], resolve),
-    },{
-      path:'/subofficeCon',
-      name:'分局',
-      component: resolve => require(['@/view/querylist/subofficeCon'], resolve),
-    },{
-      path:'/threePage',
-      name:'分局详情',
-      component: resolve => require(['@/view/querylist/threePage'], resolve),
     }
   ]
 })
